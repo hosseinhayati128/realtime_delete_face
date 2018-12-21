@@ -1,7 +1,3 @@
-
-#author:hossein hayati
-#last update : 13/9/2018
-
 # USAGE
 # python video_facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat
 # python video_facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --picamera 1
@@ -54,8 +50,8 @@ print("[INFO] camera sensor warming up...")
 vs = VideoStream(usePiCamera=args["picamera"] > 0).start()
 time.sleep(1.0)
 # background = cv2.VideoCapture('AT.mkv')
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output1.avi',fourcc, 20.0, (640,480))
+# fourcc = cv2.VideoWriter_fourcc(*'XVID')
+# out = cv2.VideoWriter('output1.avi',fourcc, 20.0, (640,480))
 # imgbackground = cv2.imread('tst.jpg')
 # loop over the frames from the video stream
 frame = vs.read()
